@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >SUDHIR GOMASE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://use.fontawesome.com/991034f73a.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"rel="stylesheet"/>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://kit.fontawesome.com/ec970da5fe.js" crossorigin="anonymous"></script>    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    </head>
+    <body>
+
+        <!--        NAVBAR-->
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-secondary text-white sticky-top">
+            <div class="container-fluid ">
+                <a class="navbar-brand fw-bolder" style="font-size: 35px; font-style: oblique;color: cyan " href="#">Sudhir Gomase</a>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-size: 25px; font-style: initial">
+                    <li class=" m-1">
+                        <a class="nav-link active text-warning fw-bolder" aria-current="page" href="#Home"><i class="fa-solid fa-house-user" style="color: greenyellow"> </i> Home</a>
+                    </li>
+                    <li class=" m-1 " >
+                        <a class=" nav-link text-warning fw-bolder " href="#About"><i class="fa-solid fa-graduation-cap" style="color: lime"> </i>About </a>
+                    </li>
+                    <li class=" m-1">
+                        <a class="nav-link text-warning fw-bolder" href="#Education"><i class="fa-solid fa-heart-circle-check" style="color: fuchsia"></i> Education </a>
+                    </li>
+                    <li class=" m-1">
+                        <a class="nav-link text-warning fw-bolder" href="#Skill"><i class="fa-solid fa-eject" style="color: darkorange"></i> Skill</a>
+                    </li>
+                    <li class=" m-1">
+                        <a class="nav-link text-warning fw-bolder" href="#project"><i class="fa-solid fa-diagram-project" style="color: lightsalmon" ></i> Projects</a>
+                    </li>
+                    <li class=" m-1">
+
+                        <img src="play.png" 
+                             style="height: 50px" 
+                             id="icon"
+                             data-bs-toggle="tooltip" 
+                             data-bs-placement="top" 
+                             title="You Wanna Listen Music" 
+                             /> 
+
+
+
+
+                        <audio id="mysong" src="Mohenjo daro beautiful animal.mp3" type="audio/mp3"></audio>
+
+
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--        Home Section-->
+
+        <div class="row pl-0 pr-0 m-0 " id="Home">
+            <div class="col-md-4 " style="background-color: black" data-aos="zoom-in">
+                <img src="hero_1.jpeg" class=" img-fluid" style="height:650px; width: 350px; ">
+            </div>
+            <div class=" col-md-8 " style="background-color: black ;padding-top: 150px;" data-aos="zoom-in" > 
+                <center class="pt-5 text-white fw-bolder">
+                    <h2>HELLO!</h2>
+                    <h1>I'M A <span class="auto-type" style="color: lightsalmon"></span></h1>
+                    <p class="contact animate__animated animate__bounceInDown h4 text-center" id="text" style="text-align: justify  ">I am a first year student pursuing MCA at Sardar Patel Institute of Technology. I am passionate about web development. I enjoy both the front end and backend aspects of web development but I am especially interested in building User Interfaces which are elegant and modern.
+                    </p><br>
+                    <button name="button" class="btn btn-outline-success" id="1" onclick="changeText()">Change Language</button>
+                    <br> 
+
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <script>
+
+                        // Typing..
+                        var typed = new Typed(".auto-type",
+                        {
+                        strings: ["Student.", "Developer.", "Coder.", "Designer."],
+                                typeSpeed: 150,
+                                backSpeed: 150,
+                                loop: true
+                        })
+                                AOS.init();
+                        //  Change Text...  
+
+                        function changeText()
+                        {
+                        var id = document.getElementsByName("button")[0].id;
+                        if (id == 1)
+                        {
+                        document.getElementById("text").innerHTML = "मी सरदार पटेल इन्स्टिट्यूट ऑफ टेक्नॉलॉजी येथे एमसीएचे शिक्षण घेणारा प्रथम वर्षाचा विद्यार्थी आहे. मला वेब डेव्हलपमेंटची आवड आहे. मी वेब डेव्हलपमेंटच्या फ्रंट एंड आणि बॅकएंड दोन्ही पैलूंचा आनंद घेतो परंतु मला विशेषतः मोहक आणि आधुनिक वापरकर्ता इंटरफेस तयार करण्यात रस आहे."
+                                document.getElementsByName("button")[0].id = 0;
+                        } else
+                        {
+                        document.getElementById("text").innerHTML = "I am a first year student pursuing MCA at SardarPatel Institute of Technology. I am passionate about web development. I enjoy both the front end and backend aspects of web development but I am especially interested in building User Interfaces which are elegant and modern."
+                                document.getElementsByName("button")[0].id = 1;
+                        }
+                        }
+
+                        //  Song...
+
+                        var mysong = document.getElementById("mysong");
+                        var icon = document.getElementById("icon");
+                        icon.onclick = function ()
+                        {
+                        if (mysong.paused)
+                        {
+                        mysong.play();
+                        icon.src = "pause.png";
+                        } else
+                        {
+                        mysong.pause();
+                        icon.src = "play.png";
+                        }
+                        }
+
+                    </script>
+                </center>
+            </div>
+        </div >
+
+        <!--         About Section-->
+
+
+        <div class="container-fluid  row g-0  " id="About" >
+
+            <div class="text-white container   pt-5 col-md-6 text-center p-3" style="font-family:Noto Serif; text-align: justify;background-color: black" >
+                <h1 class="fw-bolder "  style="text-align: end; font-family: rye">About</h1>
+                <hr class="text-white ">
+                <h3 class="text-warning pt-3"> <span class="text-white ml-5 "> Name : </span> Sudhir Narayan Gomase. </h3>
+                <h3 class="text-warning"> <span class="text-white ml-5 m-1"> Birth Date : </span> 21/09/2000 </h3>
+                <h3 class="text-warning"> <span class="text-white ml-5"> Qualification : </span> Master's of Computer Application. </h3>
+                <h3 class="text-warning"> <span class="text-white ml-5 m-1"> College Name : </span> Sardar Patel Institute of Technology. </h3>
+                <h3 class="text-warning"> <span class="text-white ml-5"> Language : </span> Marathi , Hindi , English. </h3>
+                <h3 class="text-warning"> <span class="text-white ml-5 m-1"> Hobbies : </span> Reading Books,Learning New Concepts. </h3>
+                <h3 class="text-warning"> <span class="text-white ml-5"> Favourite Game : </span> Kabbadi. </h3>
+                <h3 class="text-warning"> <span class="text-white ml-5 m-1"> Connect With : </span> 
+
+                    <a href="https://www.linkedin.com/login" style="text-decoration: none;"><i class="fa-brands fa-linkedin fa-white" style="color: cornflowerblue;border-radius: 50%;padding:2px"> </i> </a> 
+                    <a href="https://www.instagram.com/accounts/login/" style="text-decoration: none"><i class="fa-brands fa-instagram "  style="color: palevioletred"></i></a>
+                    <a href="https://www.facebook.com/" style="text-decoration: none"><i class="fa-brands fa-facebook-square" style="color: turquoise"></i></a>    
+                    <a href="https://www.gmail.com/" style="text-decoration: "><i class="fa-solid fa-envelope-circle-check" style="color: tomato"></i></a>
+                </h3>
+                <br>
+                <a class="btn btn-outline-warning text-center pt-2" href="https://drive.google.com/file/d/1b6d90fj7Ntc_pRfhiu0Yp9G2siKAx4dt/view?usp=sharing">Download Cv</a>
+            </div>
+
+            <div class="col-md-6 pt-5   container" style="background-color: black">
+
+                <h1 class=" text-warning" style="font-family: rye">Me</h1>
+                <hr class="text-white">
+
+                <div class="row container-fluid " >
+                    <div class="col-md-4 m-2 " >
+                        <img src="10TH.jpeg" height="161px" width="200px" data-bs-toggle="modal" data-bs-target="#exampleModal" > 
+                        <div class="modal fade" style="background-color: black;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" >
+                                <div class="modal-content" style="background-color: black;">
+                                    <div class="modal-body " style="background-color: black;">
+
+                                        <img src="10TH.jpeg" height="500px" width="500px" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <center><button type="button" class="btn btn-outline-info text-center m-3"  data-bs-dismiss="modal" >Close</button> </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  m-2 border " data-aos="fade-up-left">
+                        <div class="p-1 text-white " style="height:  120px;">
+                            <center style="font-size:20px; " class="fw-bolder text-warning"  >Achievements</center>
+                            <p style="font-size:17px;">Won first prize in shot put in 7kg weight category in 10th Std which is a first achievements for me.</p>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="row container-fluid">
+                    <div class="col-md-6 m-2 border "  data-aos="fade-up-right">
+                        <div class="p-1  text-white">
+                            <center style="font-size:20px; " class="fw-bolder text-warning" >Position Of Responsibility</center>
+                            <p style="font-size:17px; " class="">Managed the food Department in the college event.
+                                Organized a seminar for juniors giving them guidance about their careers.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4   ">
+
+                        <img src="sem.jpeg" height="161px" width="200px" data-bs-toggle="modal" data-bs-target="#exampleModal2" > 
+                        <div class="modal fade" style="background-color: black;" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" >
+                                <div class="modal-content" style="background-color: black;">
+                                    <div class="modal-body " style="background-color: black;">
+
+                                        <img src="sem.jpeg" height="500px" width="500px" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <center><button type="button" class="btn btn-outline-info text-center m-3"  data-bs-dismiss="modal" >Close</button> </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row container-fluid">
+                    <div class="col-md-4  m-2  ">
+
+                        <img src="tre.jpeg" height="165px" width="210px" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+
+                        <!--                         Button trigger modal 
+                                                 Modal -->
+                        <div class="modal fade" style="background-color: black;" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" >
+                                <div class="modal-content" style="background-color: black;">
+                                    <div class="modal-body " style="background-color: black;">
+
+                                        <img src="tre.jpeg" height="500px" width="500px" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <center><button type="button" class="btn btn-outline-info text-center m-3"  data-bs-dismiss="modal" >Close</button> </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6 m-2 border "  data-aos="fade-up-left">
+                        <div class="p-1 text-white">
+
+                            <center style="font-size:20px; " class="fw-bolder text-warning"  >Hobbie</center>
+                            <p style="font-size:17px; "> Trekking is an art which any healthy and young minded person can learn at any age
+                                Thus, frequent trekking helps us work our muscles and keep our body fit.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--                  Education Section-->
+            <style>
+                .flip-box {
+                    background-color: transparent;
+                    width: 300px;
+                    height: 280px;
+                    /*                border: 1px solid #f1f1f1;*/
+                    perspective: 1000px;
+                }
+
+                .flip-box-inner {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    transition: transform 0.8s;
+                    transform-style: preserve-3d;
+                }
+
+                .flip-box:hover .flip-box-inner {
+                    transform: rotateY(180deg);
+                }
+
+                .flip-box-front, .flip-box-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                }
+
+                .flip-box-front {
+                    /*                background-color: #bbb;*/
+                    color: white;
+                }
+
+                .flip-box-back {
+                    /*                background-color: dodgerblue;*/
+                    color: white;
+                    transform: rotateY(180deg);
+                </style>
+
+                <div class="container-fluid  pt-1 row  pb-5 pl-0 pr-0 m-0"style="background-color: black;font-family: Oswald" id="Education">
+                        <h1 class="text-white fw-bolder text-center pt-5 pb-5" style="font-family: Oswald" > My <span class="text-warning"> Education</span><hr></h1>
+
+                        <div class="col-md-4  pt-2"> 
+                            <i class="fa-solid fa-graduation-cap fa-2x bg-warning" style="color: beige; border-radius: 90%;  padding:5px;" > </i>
+                        <div class="mx-4" style=" border-left: 4px solid burlywood; height: 280px;">
+                            <center>
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front" style="padding-top: 80px;">
+                                            <img src="10th_1.jpg" width="290px" height="100px;"> 
+                                        </div>
+                                        <div class="flip-box-back" style="text-align: match-parent">
+
+                                                <h4 class="text-warning pt-1"> <span class="text-white"> School Name : </span> Gurukul Vidyalya. </h4>
+                                                <h4 class="text-warning pt-1"> <span class="text-white"> Address : </span> Goregaon East.Mumbai 400065 </h4>
+                                                <h4 class="text-warning pt-1"> <span class="text-white"> Percentage : </span> <b>86.80%</b> </h4>
+                                                <h4 class="text-warning pt-1"> <span class="text-white"> Grade : </span> <b>A</b> </h4>
+                                                <a href="https://drive.google.com/file/d/1OUNXuZuGM7qM0epXFqWSmxJ7QrOOlOOs/view?usp=sharing"><button class="h3 btn btn-outline-danger m-2">See Result</button></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4  pt-2" > 
+                            <i class="fa-solid fa-graduation-cap fa-2x bg-warning" style="color: beige; border-radius: 90%;  padding:5px;" > </i>
+
+                        <div class="mx-4" style=" border-left: 4px solid burlywood; height: 280px;">
+                            <center>
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front" style="padding-top: 80px;">
+                                            <img src="12.jpg" width="290px" height="100px;"> 
+                                        </div>
+                                        <div class="flip-box-back" style="text-align: match-parent">
+
+                                                <h4 class="text-warning pt-1"> <span class="text-white"> College Name : </span> Patkar Varde College. </h4>
+                                                <h4 class="text-warning pt-1"> <span class="text-white"> Address : </span> Goregaon West, Mumbai 400061 </h4>
+                                                <h4 class="text-warning pt-1"> <span class="text-white"> Percentage : </span> <b>62.46%</b> </h4>
+                                                <h4 class="text-warning pt-1"> <span class="text-white"> Field : </span> <b>Science</b> </h4>
+                                                <a href="https://drive.google.com/file/d/1OUNXuZuGM7qM0epXFqWSmxJ7QrOOlOOs/view?usp=sharing" style=""><button class="btn btn-outline-danger m-2" >See Result</button></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 pt-2">
+
+                            <i class="fa-solid fa-graduation-cap fa-2x bg-warning" style="color: beige; border-radius: 90%;  padding:5px;" > </i>
+
+                        <div class="mx-4" style=" border-left: 4px solid burlywood; height: 280px;">
+                            <center>
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front" style="padding-top: 80px;">
+                                            <img src="bsc.jpg" width="290px" height="100px;"> 
+                                        </div>
+                                        <div class="flip-box-back" style="text-align: match-parent">
+
+                                                <h4 class="text-warning pt-1"> <span class="text-white"> College Name : </span> Patkar Varde College. </h4>
+                                                <h4 class="text-warning pt-1"> <span class="text-white"> Address : </span> Goregaon West, Mumbai,400061 </h4>
+                                                <h4 class="text-warning pt-1"> <span class="text-white"> CGPI & Grade : </span> <b>8.65 & A</b> </h4>
+                                                <h4 class="text-warning pt-1"> <span class="text-white">  Field: </span> <br>Information Technology </h4>
+
+                                                <a href="https://drive.google.com/file/d/1PP8nA5ghNkcxtWr63lhe9x4JZg9uEi1Y/view?usp=sharing"> <button class="btn btn-outline-danger m-2">See Result</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row container-fluid pl-0 pr-0 m-0 pt-4" style="background-color: black ">
+
+                        <div class="col-md-3"  >
+
+
+                        </div>
+
+
+                        <div class="col-md-6 bg-white" >
+
+                            <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+                                </div>
+                                <h1 class="text-center fw-bolder pt-2" style="font-family: 'Poppins', sans-serif;"><u>CERTIFICATE'S</u></h1>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="ml.jpeg" class="d-block w-100" height="500px" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="DB.jpeg" class="d-block w-100" height="500px" alt="..." height="">
+                                    <div class="carousel-caption d-none d-md-block">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="BLOCK.jpeg" class="d-block w-100" height="500px" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="MSCIT.jpeg" class="d-block w-100" height="500px" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="IOT.jpeg" class="d-block w-100" height="500px" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="deg.jpeg" class="d-block w-100" height="500px" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="height: 280px;">
+
+                    </div>
+                </div>
+                <!--              Technical Skills...-->
+
+                <style>
+                    #myProgress {
+                        width: 100%;
+                        background-color: black;
+                    }
+
+                    #myBar {
+                        width: 50%;
+                        height: 35px;
+                        background-color: orange;
+                        text-align: center;
+                        line-height: 30px;
+                        color: white;
+                    }
+                    #myBr {
+                        width: 40%;
+                        height: 35px;
+                        background-color: azure;
+                        text-align: center;
+                        line-height: 30px;
+                        color: blue;
+                    }
+                    #myB {
+                        width: 30%;
+                        height: 35px;
+                        background-color: limegreen;
+                        text-align: center;
+                        line-height: 30px;
+                        color: black;
+                    }
+                </style>
+                <div style="background-color: black" class="text-white fw-bolder pt-5" id="Skill"> 
+                        <h1 class="text-white fw-bolder text-center pt-5" style="font-family: Oswald" > Technical <span class="text-warning"> Skill</span><hr></h1>
+                        <div class="container-fluid  pt-1 row"  >
+                            <div class="col-md-6 container-fluid">
+                                <h2 class="text-center fw-bolder pb-1" style="font-family: 'Holtwood One SC', serif; color: cyan" >[ FRONT-END ]</h2>
+
+                                <center>
+                                    <div id="myProgress">
+                                        <div id="myBar" class="fw-bolder">10%</div> 
+                                        <br>  
+                                    </div>
+                                    <div id="myProgress" class=" pt-3" >
+                                        <div id="myBr" class="fw-bolder">10%</div> 
+                                        <br>  
+                                    </div>
+                                    <div id="myProgress" class=" pt-3" >
+                                        <div id="myB" class="fw-bolder">10%</div> 
+                                        <br><button onclick="move1()" class="fw-bolder text-dark btn btn-info" style="background-color: " >HTML </button>  
+                                        <button onclick="move2()" class="fw-bolder text-dark btn btn-info m-1" >CSS </button>   
+                                        <button onclick="move3()" class="fw-bolder text-dark btn btn-info" >JAVA-Script </button> 
+                                    </div>
+                                </center>
+
+                                <br>
+
+                                <script>
+                                    var i = 0;
+                                    function move1() {
+                                    if (i == 0) {
+                                    i = 1;
+                                    var elem = document.getElementById("myBar");
+                                    var width = 10;
+                                    var id = setInterval(frame, 10);
+                                    function frame() {
+                                    if (width >= 75) {
+                                    clearInterval(id);
+                                    i = 0;
+                                    } else {
+                                    width++;
+                                    elem.style.width = width + "%";
+                                    elem.innerHTML = width + "%";
+                                    }
+                                    }
+                                    }
+                                    }
+                                    var i = 0;
+                                    function move2() {
+
+                                    if (i == 0) {
+                                    i = 1;
+                                    var elem = document.getElementById("myBr");
+                                    var width = 10;
+                                    var id = setInterval(frame, 10);
+                                    function frame() {
+                                    if (width >= 65) {
+                                    clearInterval(id);
+                                    i = 0;
+                                    } else {
+                                    width++;
+                                    elem.style.width = width + "%";
+                                    elem.innerHTML = width + "%";
+                                    }
+                                    }
+                                    }
+                                    }
+                                    var i = 0;
+                                    function move3() {
+
+                                    if (i == 0) {
+                                    i = 1;
+                                    var elem = document.getElementById("myB");
+                                    var width = 10;
+                                    var id = setInterval(frame, 10);
+                                    function frame() {
+                                    if (width >= 60) {
+                                    clearInterval(id);
+                                    i = 0;
+                                    } else {
+                                    width++;
+                                    elem.style.width = width + "%";
+                                    elem.innerHTML = width + "%";
+                                    }
+                                    }
+                                    }
+                                    }
+                                </script>
+                            </div>
+                            <!--                                                BACKEND        -->
+
+                            <style>
+
+
+                                #first {
+                                width: 50%;
+                                height: 35px;
+                                background-color: orange;
+                                text-align: center;
+                                line-height: 30px;
+                                color: white;
+                            }
+                            #second {
+                                width: 40%;
+                                height: 35px;
+                                background-color: azure;
+                                text-align: center;
+                                line-height: 30px;
+                                color: blue;
+                            }
+                            #third {
+                                width: 30%;
+                                height: 35px;
+                                background-color: limegreen;
+                                text-align: center;
+                                line-height: 30px;
+                                color: black;
+                            }
+                        </style>
+                        <div class="col-md-6">
+                            <h2 class="text-center fw-bolder pb-1" style="font-family: 'Holtwood One SC', serif; color: cyan" >[ BACK-END ]</h2>
+                                <center>
+                                    <div id="myProgress" class="" >
+                                        <div id="first" class="fw-bolder">10%</div> 
+                                        <br>  
+                                    </div>
+                                    <div id="myProgress" class=" pt-3" >
+                                        <div id="second" class="fw-bolder">10%</div> 
+                                        <br>  
+                                    </div>
+                                    <div id="myProgress" class=" pt-3" >
+                                        <div id="third" class="fw-bolder">10%</div> 
+
+                                        <br><button onclick="move4()" class="fw-bolder text-dark btn btn-info" style="background-color: " >JAVA </button>  
+                                        <button onclick="move5()" class="fw-bolder text-dark btn btn-info m-1" >CPP </button>   
+                                        <button onclick="move6()" class="fw-bolder text-dark btn btn-info" >PYTHON </button> 
+                                    </div>
+                                </center>
+
+                                <br>
+
+                                <script>
+                                    var i = 0;
+                                    function move4() {
+                                    if (i == 0) {
+                                    i = 1;
+                                    var elem = document.getElementById("first");
+                                    var width = 10;
+                                    var id = setInterval(frame, 10);
+                                    function frame() {
+                                    if (width >= 75) {
+                                    clearInterval(id);
+                                    i = 0;
+                                    } else {
+                                    width++;
+                                    elem.style.width = width + "%";
+                                    elem.innerHTML = width + "%";
+                                    }
+                                    }
+                                    }
+                                    }
+                                    var i = 0;
+                                    function move5() {
+
+                                    if (i == 0) {
+                                    i = 1;
+                                    var elem = document.getElementById("second");
+                                    var width = 10;
+                                    var id = setInterval(frame, 10);
+                                    function frame() {
+                                    if (width >= 60) {
+                                    clearInterval(id);
+                                    i = 0;
+                                    } else {
+                                    width++;
+                                    elem.style.width = width + "%";
+                                    elem.innerHTML = width + "%";
+                                    }
+                                    }
+                                    }
+                                    }
+                                    var i = 0;
+                                    function move6() {
+
+                                    if (i == 0) {
+                                    i = 1;
+                                    var elem = document.getElementById("third");
+                                    var width = 10;
+                                    var id = setInterval(frame, 10);
+                                    function frame() {
+                                    if (width >= 45) {
+                                    clearInterval(id);
+                                    i = 0;
+                                    } else {
+                                    width++;
+                                    elem.style.width = width + "%";
+                                    elem.innerHTML = width + "%";
+                                    }
+                                    }
+                                    }
+                                    }
+                                </script>
+
+                            </div>
+                        </div>
+                        <br>
+
+                        <style>
+                            #fourth {
+                            width: 30%;
+                            height: 35px;
+                            background-color: orange;
+                            text-align: center;
+                            line-height: 30px;
+                            color: white;
+                        }
+                        #fifth {
+                            width: 20%;
+                            height: 35px;
+                            background-color: azure;
+                            text-align: center;
+                            line-height: 30px;
+                            color: blue;
+                        }
+
+                    </style>
+                    <h2 class="text-center fw-bolder pT-1" style="font-family: 'Holtwood One SC', serif; color: cyan" >[ FRAME-WORK / DATABASE ]</h2>
+                        <center>
+                            <div id="myProgress" class="" >
+                                <div id="fourth" class="fw-bolder">10%</div> 
+                                <br>  
+                            </div>
+
+                            <div id="myProgress" class=" pt-3" >
+                                <div id="fifth" class="fw-bolder">10%</div> 
+
+                                <br>
+                                <button onclick="move7()" class="fw-bolder text-dark btn btn-info m-1" style="background-color: " >BOOTSTRAP </button>  
+                                <button onclick="move8()" class="fw-bolder text-dark btn btn-info" >My-Sql </button> 
+                            </div>
+                        </center>
+                        <script>
+                            var i = 0;
+                            function move7() {
+                            if (i == 0) {
+                            i = 1;
+                            var elem = document.getElementById("fourth");
+                            var width = 10;
+                            var id = setInterval(frame, 10);
+                            function frame() {
+                            if (width >= 75) {
+                            clearInterval(id);
+                            i = 0;
+                            } else {
+                            width++;
+                            elem.style.width = width + "%";
+                            elem.innerHTML = width + "%";
+                            }
+                            }
+                            }
+                            }
+                            function move8() {
+                            if (i == 0) {
+                            i = 1;
+                            var elem = document.getElementById("fifth");
+                            var width = 10;
+                            var id = setInterval(frame, 10);
+                            function frame() {
+                            if (width >= 60) {
+                            clearInterval(id);
+                            i = 0;
+                            } else {
+                            width++;
+                            elem.style.width = width + "%";
+                            elem.innerHTML = width + "%";
+                            }
+                            }
+                            }
+                            }
+                        </script><br>
+                        <h2 class="text-center fw-bolder pt-1" style="font-family: 'Holtwood One SC', serif; color: cyan" >[ HANDS ON TOOLS ]</h2>
+                        <div class="text-center " data-aos="zoom-in"> 
+                            <img src="app_1.jpg" width="900px" height="300px" class="text-center img-fluid"></div>
+                    </div>
+
+
+                    <div class="pb-5" style="background-color:  black" id="project">
+                        <h1 class="text-white fw-bolder text-center pt-5 " style="font-family: Oswald" > Proj<span class="text-warning">ects</span><hr></h1>
+
+                        <div class="row container-fluid " >
+                            <div class="col-md-6 text-white pb-3 border-end" data-aos="flip-left" style="font-family: 'Trocchi', serif;"> 
+                            <h3 class="text-white text-center fw-bolder pt-1">Securing And Sharing Files</h3>
+                            <h3 class="text-warning    text-center  ">Description</h3>
+                            <p class="h5 " style="text-align: justify;font-family: 'Trocchi', serif;">Normally every programmer deal with transferring of files. So, the problems they might face is hacking of data, a time delay due to transmission of data, copy of garbled data, etc. Our system provides a set of great utilities to the users. The security issues like Encryption, Decryption etc are provided, so that data is safely transferred without the fear of information leaking.
+                                Transmission of huge data files may engage network for a long time resulting the starvation of other clients. To avoid this inconsistency, the Split & Join utilities are provided in the system.
+                                The system provides various utilities: <br> File Encryption/Decryption
+                                <br> File Splitter/Merger <br> File Comparison</p>
+
+                            <h3 class="text-warning   text-center">Environment</h3>
+                            <div class="container overflow-hidden">
+                                <div class="row ">
+                                    <div class="col-6" style="text-align: center">
+                                            <h5 class="">Front-End: JSP , Bootstrap</h5>
+                                        </div>
+                                        <div class="col-6" style="text-align: center">
+                                            <h5 >Back-End: JAVA</h5>
+                                        </div>
+                                        <div class="col-6" style="text-align: center">
+                                            <h5 class="">Database: MySql</h5>
+                                        </div>
+                                        <div class="col-6" style="text-align: center">
+                                            <h5 class="">Server: Apache Tomcat 7.0</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <h3 class="text-warning  h3  text-center ">Algoritham</h3>
+                                <p class="h5 " style="text-align: justify;">The idea of RSA is based on the fact that 
+                                it is difficult to factorize a large integer. The public key consists of two numbers 
+                                where one number is multiplication of two large prime numbers. And private key is also 
+                                derived from the same two prime numbers. So if somebody can factorize the large number, 
+                                the private key is compromised. Therefore encryption strength totally lies on the key size 
+                                and if we double or triple the key size, the strength of encryption increases exponentially. 
+
+                            </p>
+                            <h3 class="text-warning  h3  text-center ">Synopsis</h3>
+                            <p class="h5 " style="text-align: justify"> From this web application we came to know several facts.
+                                    The logical schema of the web application should be designed properly. 
+                                    The analysis of the web application should be independent of its implementation. 
+                                    The web application should be thoroughly examined before developing it. 
+                                    Analysis of the web application plays a vital role.
+                                    We can conclude that the user can encrypt or decrypt text files and send them to anyone with the help of registered email-id. User can also split and merge the text file along with this web application as well as user can compare any two-text file for ease. 
+                                </p>
+
+                                <h6 style="text-align: end "class="text-muted"> OCT-2020  TO  FEB-2021 </h6>
+                                <center><a class="btn btn-outline-danger text-center" href="https://github.com/Sudhir-Gomase/Securing-and-sharing-Files">View On GitHub</a></center>
+                            </div>
+
+
+                            <div class="text-white col-md-6   border-start  p-1" data-aos="flip-right" style="font-family: 'Trocchi', serif;" >
+                            <h3 class=" text-center fw-bolder ">Blog Maker</h3>
+
+                            <h3 class="text-warning    text-center  ">Description</h3>
+                            <p class="h5 pb-5" style="text-align: justify;font-family : 'Trocchi', serif;">At its most basic, 
+                                blogs can help you develop an online presence, prove yourself an expert in an industry, 
+                                and attract more quality leads to all pages of your site. If you're contemplating creating 
+                                a blog for your business, 
+                                or simply want to know what one is, keep reading.
+                                Bloggers do not necessarily have a journalistic background, so the quality of blogs are primarily distinguished by the benefits for the reader.
+                                Successful blogs typically include the following: personal experience, insider tips, high-quality and valuable information, authenticity and a unique style.
+                                Because blogs often contain original ideas and personal experiences, they are frequently written from first-person perspective to give them a personal touch.
+
+                            </p>
+
+                            <h3 class="text-warning  pt-1  text-center">Environment</h3>
+                            <div class="container overflow-hidden pb-5">
+                                <div class="row ">
+                                    <div class="col-6" style="text-align: center">
+                                            <h5 class="">Front-End: HTML , Bootstrap</h5>
+                                        </div>
+                                        <div class="col-6" style="text-align: center">
+                                            <h5 >Back-End: JAVA</h5>
+                                        </div>
+                                        <div class="col-6" style="text-align: center">
+                                            <h5 class="">Database: MySql</h5>
+                                        </div>
+                                        <div class="col-6" style="text-align: center">
+                                            <h5 class="">Server: GlassFish Server</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <h3 class="text-warning  h3 pt-3 text-center ">Synopsis</h3>
+                                <p class="h5 pb-3" style="text-align: justify"> Since the advent of blogs, 
+                                    the number of online journals has significantly increased worldwide. 
+                                    Private bloggers write down their own thoughts and share their ideas 
+                                    and experiences with their readers.
+                                    Amateur and professional copywriters develop blogs on particular topics and make a 
+                                    name for themselves. Companies choose to develop their own company blogs to increase their brand presence, position themselves as experts and retain customer loyalty.
+                                    Successful blogs are authentic, unique and focus on the target audience.</p>
+
+                                <h6 style="text-align: end "class="text-muted"> OCT-2020  TO  FEB-2021 </h6><br><br><br><br><br>
+                                <center><a class="btn btn-outline-danger text-center" href="https://github.com/Sudhir-Gomase/Blog-Maker">View On GitHub</a></center>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!--                 Footer -->
+                    <footer class="pb-1" style="background-color: #020203" >
+                        <div class="row container-fluid" stayle="background-color: black">
+
+                            <div class="col-md-4 ">
+                                <h3 class="text-center fw-bolder text-white" style="font-family: 'IM Fell English SC', serif;"><span class="text-warning">CONNECT</span> WITH</h3>
+                            <hr class="text-warning">
+                            <center><hr class="text-info fw-bolder w-75 text-center pt-0   ">
+                                <hr class="text-info fw-bolder w-50 text-center pt-0   "></center>
+
+                            <center>
+                                <br>
+                                <a href="https://www.linkedin.com/login" style="text-decoration: none;"><i class="fa-brands fa-linkedin fa-white p-1" style="color: cornflowerblue;font-size: 50px;"> </i> </a> 
+                                <a href="https://www.gmail.com/" style="text-decoration: "><i class="fa-solid fa-envelope-circle-check p-1" style="color: tomato;font-size: 50px;"></i></a>
+                                <a href="https://www.instagram.com/accounts/login/" style="text-decoration: none"><i class="fa-brands fa-instagram p-1"  style="color: palevioletred;font-size: 50px;"></i></a>
+                                <a href="https://www.facebook.com/" style="text-decoration: none"><i class="fa-brands fa-facebook-square p-1" style="color: turquoise;font-size: 50px;"></i></a>    
+                                <a href="https://www.youtube.com/channel/UCX5nnGOqKI7FEK8UNBUdSdA" style="text-decoration: none"><i class="fa-brands fa-youtube p-1" style="color: red;font-size: 50px;"></i></a>    
+                                <a href="https://www.youtube.com/channel/UCX5nnGOqKI7FEK8UNBUdSdA" style="text-decoration: none"><i class="fa-brands fa-github p-1" style="color: limegreen;font-size: 50px;"></i></a>    
+
+                            </center>
+                            <br>
+                            <center><hr class="text-info fw-bolder w-50 text-center pt-0   ">
+                                <hr class="text-warning w-75 text-center pt-0   "></center>
+                            <hr class="text-white">
+                        </div>
+                        <div class="col-md-4  text-center text-info fw-bolder"  style="background-color: black;font-family: 'Cormorant SC', serif;">
+                            <i class="fa-solid fa-graduation-cap fa-3x " style="color: background; border-radius: 80%; " > </i>
+                            <br><br><h1>THANKS</h1>
+                            <h3>FOR</h3>
+                            <h1>WATCHING</h1>
+                        </div>
+                        <div class="col-md-4 ">
+                            <h3 style="font-family: 'IM Fell English SC', serif;" class="text-white text-center fw-bolder">HOPE YOU <span class="text-success">LIKE IT!</span></h3>
+                            <hr class="text-warning">
+                            <center><hr class="text-info fw-bolder w-75 text-center pt-0   ">
+                                <hr class="text-info fw-bolder w-50 text-center pt-0   "></center>
+                            <h5 class="text-center text-white p-2" style="text-align: justify;background-color: black">
+                                    “The more you feed your mind with positive thoughts, 
+                                    the more you can attract great things into your life.
+                                    Stay strong, stay positive, and never give up.”
+
+                                </h5>
+                                <center><hr class="text-info fw-bolder w-50 text-center pt-0   ">
+                                    <hr class="text-warning w-75 text-center pt-0   "></center>
+                                <hr class="text-white">
+                            </div>
+                        </div>
+
+
+
+                        <!--                     Copyright -->
+                        <div class=" text-white text-center  pb-0 h5" style="background-color: black">© 2022 Copyright:
+                            <a href="" class="text-warning"style="text-decoration: none"> Sudhir Gomase</a>
+                        </div>  
+                    </footer>
+
+            </body>
+        </html> 
+
